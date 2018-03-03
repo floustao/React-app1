@@ -1,12 +1,12 @@
-## My first react app
+# My first react app
 
-# Content
+## Content
 
 It is a real-time app for a seafood market where price and quantity available are variable and can change at a moment's notice.
 
 Authorized users can update product details and build a menu.
 
-# Test locally
+## Test locally
 
 Run the following in your terminal:
 
