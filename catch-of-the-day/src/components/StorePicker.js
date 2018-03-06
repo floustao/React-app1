@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { getRestaurantName } from '../helpers'
 
 class StorePicker extends React.Component {
   render() {
@@ -6,7 +7,7 @@ class StorePicker extends React.Component {
       <Fragment>
         <form className="store-selector">
           <h2>Enter your store name</h2>
-          <input type="text" required placeholder="store name"/>
+          <input type="text" required placeholder="store name" defaultValue={getRestaurantName()}/>
           <button type="submit">Visit →</button>
         </form>
       </Fragment>
