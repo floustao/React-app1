@@ -1,12 +1,24 @@
 import React, { Fragment } from 'react';
+import { getRestaurantName } from '../helpers'
 
 class StorePicker extends React.Component {
+  myInput = React.createRef();
+
+  goToStore = (e) => {
+    // Stop the form from submitting
+    e.preventDefault();
+    // get user input
+    console.log(this.myInput.value.value);
+    // route to /store/:input
+
+  }
+
   render() {
     return (
       <Fragment>
-        <form className="store-selector">
+        <form className="store-selector" onSubmit={this.goToStore}>
           <h2>Enter your store name</h2>
-          <input type="text" required placeholder="store name"/>
+          <input type="text" ref={this.myInput} required placeholder="store name" defaultValue={getRestaurantName()}/>
           <button type="submit">Visit →</button>
         </form>
       </Fragment>
