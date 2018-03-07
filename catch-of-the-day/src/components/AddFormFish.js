@@ -20,6 +20,7 @@ class AddFormFish extends React.Component {
       image: this.imageRef.value.value
     }
     // 3. pass fish object to parent state
+    this.props.addFish(fish);
   }
 
   render() {
