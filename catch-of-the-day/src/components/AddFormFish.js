@@ -21,6 +21,8 @@ class AddFormFish extends React.Component {
     }
     // 3. pass fish object to parent state
     this.props.addFish(fish);
+    // 4. empty form
+    e.currentTarget.reset();
   }
 
   render() {
