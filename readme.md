@@ -1,8 +1,8 @@
 # My first react app
 
-*It is a real-time app for a seafood market where price and quantity available are variable and can change at a moment's notice.
+*It is a real-time app for a seafood market where price and quantity available are variable and can change at a moment's notice.*
 
-Authorized users can update product details and build a menu.*
+*Authorized users can update product details and build a menu.*
 
 
 ## Showcase
