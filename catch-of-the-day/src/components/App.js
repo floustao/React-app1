@@ -20,6 +20,10 @@ class App extends React.Component {
     });
   }
 
+  componentWillUnmount() {
+    base.removeBinding(this.ref);
+  }
+
   addFish = (fish) => {
     // 1. copy state data we want to populate to avoid mutations
     const fishes = {...this.state.fishes};
