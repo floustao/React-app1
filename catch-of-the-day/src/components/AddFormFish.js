@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 class AddFormFish extends React.Component {
 
@@ -7,6 +8,10 @@ class AddFormFish extends React.Component {
   statusRef = React.createRef();
   descRef = React.createRef();
   imageRef = React.createRef();
+
+  static propTypes = {
+    addFish: PropTypes.func
+  };
 
   createFish = (e) => {
     // 1. prevent default refresh after submitting

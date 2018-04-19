@@ -1,8 +1,13 @@
 import React, { Fragment } from 'react';
-import { getRestaurantName } from '../helpers'
+import { getRestaurantName } from '../helpers';
+import PropTypes from "prop-types";
 
 class StorePicker extends React.Component {
   myInput = React.createRef();
+
+  static propTypes = {
+    history: PropTypes.object
+  };
 
   goToStore = (e) => {
     // Stop the form from submitting
